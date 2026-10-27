@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waider Salcedo | Sitio Oficial</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("img/waider1.png");
+
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:40px;
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#FFD700;
+    text-shadow:2px 2px 8px black;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+nav{
+    background:#111827;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
+
+section{
+    padding:80px 10%;
+}
+
+#sobre{
+    background:#111827;
+}
+
+#servicios{
+    background:#1f2937;
+}
+
+#galeria{
+    background:#111827;
+}
+
+#videos{
+    background:#1f2937;
+}
+
+#redes{
+    background:#111827;
+}
+
+#contacto{
+    background:#1f2937;
+}
+
+#qr{
+    background:#111827;
+}
+
+h2{
+    text-align:center;
+    color:#FFD700;
+    margin-bottom:30px;
+}
+
+.sobre{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+.servicios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.videos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.videos video{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    background:black;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.redes{
+    text-align:center;
+}
+
+.redes a{
+    display:inline-block;
+    margin:10px;
+    padding:15px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.instagram{
+    background:#E1306C;
+}
+
+.tiktok{
+    background:black;
+    border:1px solid white;
+}
+
+.facebook{
+    background:#1877F2;
+}
+
+.contacto{
+    text-align:center;
+}
+
+.btn-whatsapp{
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:10px;
+    display:inline-block;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.qr-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.qr-card{
+    background:rgba(255,255,255,.08);
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.qr-card img{
+    width:220px;
+    max-width:100%;
+    background:white;
+    padding:10px;
+    border-radius:15px;
+}
+
+.qr-card h3{
+    color:#FFD700;
+    margin-top:15px;
+}
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+<h1>WAIDER SALCEDO</h1>
+
+<p>🎤 Artista Colombiano</p>
+
+<p>
+"Cantar es mi pasión, mi primer amor y el secreto de mi energía"
+</p>
+
+<p style="color:#FFD700;font-weight:bold;">
+✨ Eventos • Eucaristías • Serenatas • Matrimonios • Cumpleaños • Reuniones Sociales ✨
+</p>
+
+</div>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre Mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#videos">Videos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="sobre">
+<h2>Sobre Mí</h2>
+
+<div class="sobre">
+<p>
+Soy un artista colombiano que lleva lo mejor de la música a tus oídos, con un sonido único e inconfundible.
+</p>
+</div>
+</section>
+
+<section id="servicios">
+
+<h2>Servicios Musicales</h2>
+
+<div class="servicios">
+
+<div class="card">
+<h3>🎤 Eventos</h3>
+<p>Presentaciones musicales profesionales.</p>
+</div>
+
+<div class="card">
+<h3>🙏 Eucaristías</h3>
+<p>Música para celebraciones religiosas.</p>
+</div>
+
+<div class="card">
+<h3>🎉 Reuniones Sociales</h3>
+<p>Animación musical y entretenimiento.</p>
+</div>
+
+<div class="card">
+<h3>💒 Matrimonios</h3>
+<p>Música para bodas y recepciones.</p>
+</div>
+
+<div class="card">
+<h3>🎂 Cumpleaños</h3>
+<p>Shows musicales personalizados.</p>
+</div>
+
+<div class="card">
+<h3>🎶 Serenatas</h3>
+<p>Momentos especiales e inolvidables.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2>Galería Fotográfica</h2>
+
+<div class="galeria">
+<img src="img/waider1.png" alt="Waider Salcedo">
+<img src="img/waider2.png" alt="Waider Salcedo">
+</div>
+
+</section>
+
+<section id="videos">
+
+<h2>🎥 Videos Musicales</h2>
+
+<div class="videos">
+
+<video controls>
+    <source src="Videos/Video1.mp4" type="video/mp4">
+</video>
+
+<video controls>
+    <source src="Videos/Video2.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<section id="redes" class="redes">
+
+<h2>Redes Sociales</h2>
+
+<a href="https://www.instagram.com/waider__s"
+   target="_blank"
+   class="instagram">
+   📸 Instagram @waider__s
+</a>
+
+<a href="https://www.tiktok.com/@real.waider.salce?is_from_webapp=1&sender_device=pc" target="_blank" class="tiktok">
+TikTok @realwaider
+</a>
+
+<a href="https://www.facebook.com/share/1CaVxLEHxn/" target="_blank" class="facebook">
+Facebook Real Waider Salcedo
+</a>
+
+</section>
+
+<section id="contacto" class="contacto">
+
+<h2>📱 Contrataciones</h2>
+
+<p>WhatsApp: +57 318 945 7090</p>
+
+<a href="https://wa.me/573189457090"
+target="_blank"
+class="btn-whatsapp">
+Contactar por WhatsApp
+</a>
+
+</section>
+
+<section id="qr">
+
+    <h2>📲 Escanea y Sígueme</h2>
+
+    <div class="qr-container">
+
+        <div class="qr-card">
+            <img src="img/whatsapp.png" alt="WhatsApp">
+            <h3>WhatsApp</h3>
+        </div>
+
+        <div class="qr-card">
+            <img src="img/instagram.jpg" alt="Instagram">
+            <h3>Instagram</h3>
+        </div>
+
+        <div class="qr-card">
+            <img src="img/facebook.png" alt="Facebook">
+            <h3>Facebook</h3>
+        </div>
+
+        <div class="qr-card">
+            <img src="img/tiktok.jpg" alt="TikTok">
+            <h3>TikTok</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+<p>© 2026 Waider Salcedo | Sitio Oficial</p>
+</footer>
+
+<a href="https://wa.me/573189457090"
+target="_blank"
+class="whatsapp-float">
+📱
+</a>
+
+</body>
+</html>
